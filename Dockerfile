@@ -44,6 +44,6 @@ RUN umask 0002 && \
 # Handle running as a non-root user (www-data is id/gid 33)
 USER www-data
 VOLUME /config
-EXPOSE 443
+EXPOSE 80
 EXPOSE 8000
 CMD ["/usr/bin/supervisord", "-c", "/opt/apprise/webapp/etc/supervisord.conf"]
