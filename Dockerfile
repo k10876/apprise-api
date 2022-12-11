@@ -45,6 +45,4 @@ RUN umask 0002 && \
 USER www-data
 VOLUME /config
 EXPOSE 80
-EXPOSE 8000
-EXPOSE 443
 CMD ["/usr/bin/supervisord", "-c", "/opt/apprise/webapp/etc/supervisord.conf"]
